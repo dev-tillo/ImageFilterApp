@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.main.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bacground" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/landing_bacground" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:backgroundTint="@color/buttonSavedImages"
+        android:fontFamily="@font/poppinssemibold"
+        android:includeFontPadding="false"
+        android:text="Saved Images"
+        android:textSize="@dimen/_12sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:backgroundTint="#F3AD46"
+        android:fontFamily="@font/poppinssemibold"
+        android:includeFontPadding="false"
+        android:text="Edit New Image"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@id/save" />
+
+    <TextView
+        android:id="@+id/textsubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:layout_marginBottom="@dimen/_16ssp"
+        android:fontFamily="@font/poppinsregular"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_14sdp"
+        android:text="Let`s create something new!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/edit" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16ssp"
+        android:layout_marginEnd="@dimen/_16ssp"
+        android:layout_marginBottom="@dimen/_6ssp"
+        android:fontFamily="@font/poppinssemibold"
+        android:includeFontPadding="false"
+        android:text="Image Filters"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@id/textsubtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
